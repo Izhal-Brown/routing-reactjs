@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+}
+
+.navbar-nav a{
+  text-decoration: none;
+  margin-left: 10px;
+  color: #a5a5a5;
+}
+
+.navbar-nav a:hover{
+  color: #DEE2E6;
+}
+
+.navbar [type="search"]{
+  margin-right: 10px;
+}
+
+.navbar form{
+  position: absolute;
+  right: 10px;
+}
+
+.navbar-brand,
+.jumbotron h1 span{
+  font-family: 'Pacifico', cursive;
+  font-size: larger;
+}
+
+.jumbotron{
+  background-image:linear-gradient(to bottom, #212529,#198754 );
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.jumbotron .foto {
+ align-self: center;
+}
+
+.jumbotron .foto img{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 200px;
+  border: 5px solid #DEE2E6;;
+  border-radius: 50%;
+  background-color: black;
+  transition: all 0.5s ease;
+}
+
+.jumbotron .foto img:hover{
+  transform: scale(1.1);
+}
+
+.jumbotron h1, .jumbotron p{
+  color: #DEE2E6;
+  text-align: center;
+}
+
+.jumbotron .tombol{
+  align-self: center;
+}
+
+.jumbotron .btn-modal{
+  padding: 10px 20px;
+  background-color:#212529;
+  color: #DEE2E6;
+  width: 200px;
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 1px #212529;
+  transition: all 0.5s ease;
+  border: none;
+}
+
+.jumbotron .btn-modal:hover{
+  color: #212529;
+  background-color: #DEE2E6;
+  box-shadow: 1px 1px 15px 1px #DEE2E6;
+}
+
+/* modal */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.contact-form .form-item{
+  margin:20px 0px;
+}
+
+button.btn.btn-outline-danger{
+  border: none !important;
+  font-weight: bolder;
+}
+
+button.btn.btn-outline-danger:hover{
+  border-radius: 50%;
+}
+
+/* Card  */
+.card{
+  border: none !important;
+}
+
+.card-header{
+  background-color:transparent;
+}
+
+.card-header h5{
+  background-color:transparent;
+  border-bottom: none;
+}
+
+.card .card-header h5{
+  color: #198754;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: -20px;
+}
+
+.card h5 i.bi{
+  color: #212529;
+  font-size: 36px;
+}
+
+/* info */
+.info{
+  margin: 20px 0;
+  padding: 30px 0 10px;
+  border-top: 5px dashed #198754;
+  border-bottom: 5px dashed #198754;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.info .info-item{
+  margin: 20px 50px 20px;
+}
+
+.info .info-item h2 i{
+  color: #DEE2E6;
+  background-color: #212529;
+  font-size: 32px;
+  padding: 8px 16px;
+  border-radius: 50%;
+}
+
+.info .info-item h4{
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Personal Data */
+.ppdk{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.card{
+  margin: 5px 5px;
+}
+
+.card-body{
+  flex-direction: row;
+}
+
+.card-body .card-item{
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.card-body .card-item p{
+  position: relative;
+  padding-left: 135px;
+  text-align: left;
+}
+
+.card-body .card-item h5{
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.card-body .card-item .dubbelepunt{
+  position: absolute;
+  left: 120px;
+}
+
+.card-body .timeline{
+  max-width: 100%;
+}
+
+.card-body .timeline .timeline-item{
+  padding-bottom: 10px;
+}
+
+.timeline .timeline-item h4,
+.timeline .timeline-item p{
+  position: relative;
+  padding-left: 155px;
+  text-align: left;
+}
+
+
+.timeline .timeline-item:last-child{
+  margin-bottom: 0;
+}
+
+.timeline .timeline-item::before{
+  content: '';
+  width: 1px;
+  position: absolute;
+  height: 75%;
+  left: 140px;
+  top: 100px;
+  background-color: #212529;
+}
+
+.timeline .timeline-date h5{
+  position: absolute;
+  left: 0;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.timeline .timeline-item .circle-dot{
+  position: absolute;
+  left: 133px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #212529;
+}
+
+.timeline .timeline-item .timeline-title{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+/* Education */
+.education{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.education .timeline-education .timeline-item{
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.education .timeline-education .timeline-item .timeline-date h5{
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+  background-color: #212529;
+  color: #DEE2E6;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.education .timeline-education .timeline-item h4{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Nonformal */
+.pnfs{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.timeline-nonformal .timeline-item{
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.timeline-nonformal .timeline-item p{
+  padding-left: 95px;
+  text-align: left;
+}
+
+.timeline-nonformal .timeline-item::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 70px;
+  background-color: #212529;
+}
+
+.timeline-nonformal .timeline-item .circle-dot{
+  position: absolute;
+  left: 63px;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #212529;
+}
+
+.timeline-nonformal .timeline-item .timeline-date{
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* skills */
+.skills{
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 5px 30px 30px 30px;
+  width: 50%;
+  height:fit-content !important;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 15px 2px black;
+}
+
+.skills h5.skill-header {
+  font-size: 36px;
+  color: #198754;
+  font-weight: 600;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.skills h5 i{
+  color: black;
+  margin-right: 10px;
+}
+
+.skill-item{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.skill-item .progress,
+.skill-item .progress-bar,
+.skill-item .progress-title{
+  padding-left: 60px !important;
+}
+
+.skill-item img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+}
+
+.footer{
+  background-color: #212529;
+  height: 50px;
+  margin-bottom: 0;
+}
+
+.footer p{
+  color: #DEE2E6;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media (max-width:1221px){
+
+  .info-item{
+    width: 25%;
+  }
+
+  .pdpk{
+    padding: 0px 0px !important;
+  }
+
+  .skills{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width:993px){
+
+  .info-item{
+    width: 30%;
+  }
+
+  .ppdk .card{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nonformal{
+    width: 100%;
+  }
+
+  .skills{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width:767px){
+  .nonformal{
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .info-item{
+    width: 100%;
+  }
+
+  .education .timeline-education{
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width:575px){
+  .navbar form{
+    position: relative;
+    margin-left: 10px;
+  }
+}
